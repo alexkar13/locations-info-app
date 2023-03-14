@@ -29,21 +29,23 @@ body {
 }
 
 .card-title {
+  font-size: 24px;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 16px;
   color: dimgrey;
 }
 
 .container-temperature {
   font-size: 48px;
-  margin: 16px;
+  margin: 32px;
   color: darkgray;
 }
 
 .container-toggle-buttons {
   display: flex;
   justify-content: center;
-  padding: 32px;
+  margin: 32px;
 }
 
 .toggle-button {
@@ -51,7 +53,7 @@ body {
   font-weight: 100;
   padding: 4px 8px;
   border: 1px solid dimgray;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .unit-enabled {
@@ -66,5 +68,3 @@ body {
 .left-border {
   border-left: 1px solid dimgray;
 }
-
-
