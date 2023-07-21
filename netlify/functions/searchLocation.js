@@ -1,3 +1,10 @@
+/**
+ * Netlify serverless function that searches for a location.
+ * The serverless function serves the purpose of not revealing the API key.
+ * @param {} event
+ * @param {*} context
+ * @returns
+ */
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
   const url = `${NINJA_API_BASE_PATH}/geocoding?city=${body.searchTerm}`;

@@ -1,3 +1,10 @@
+/**
+ * Netlify serverless function that fetches the time and temp of particular location.
+ * The serverless function serves the purpose of not revealing the API key.
+ * @param {} event
+ * @param {*} context
+ * @returns
+ */
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
   const weatherAPI = `https://api.api-ninjas.com/v1/weather?lat=${body.lat}&lon=${body.long}`;

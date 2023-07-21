@@ -1,2 +1,2 @@
 [build]
-  publish = "src/location-info"
+  publish = "src/locations-info"

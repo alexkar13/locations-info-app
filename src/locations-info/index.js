@@ -201,8 +201,7 @@ async function fetchTimeAndTemp() {
   });
 
   const json = await response.json();
-  console.log(json);
-
+  
   return json.data;
 }
 
