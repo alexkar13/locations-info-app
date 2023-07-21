@@ -1,10 +1,16 @@
+:root {
+  --primary: beige;
+  --secondary: dimgrey;
+  --tertiary: darkgrey;
+  --card-shadow: grey;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* makes card appear in center of screen */
 .container {
   height: 100vh;
   display: flex;
@@ -12,16 +18,17 @@ body {
   justify-content: center;
 }
 
-/* min width and styles */
+/* ==== CARD ==== */
+
 .card {
   min-width: 250px;
   border-radius: 16px;
-  box-shadow: 0px 0px 8px 0px grey;
+  box-shadow: 0px 0px 8px 0px var(--card-shadow);
   text-align: center;
 }
 
 .card-header {
-  background-color: beige;
+  background-color: var(--primary);
   text-align: center;
   /* just want rounded corners for top-left, top right to match card's rounded corners */
   border-top-left-radius: inherit;
@@ -29,35 +36,40 @@ body {
 }
 
 .card-title {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: calc(16px + 0.5vw);
   margin-top: 0;
   margin-bottom: 0;
   padding: 16px;
-  color: dimgrey;
+  color: var(--secondary);
 }
+
+/* ==== TEMPERATURE ==== */
 
 .container-temperature {
-  font-size: 48px;
+  font-size: calc(16px + 1.2vw);
   margin: 32px;
-  color: darkgray;
+  color: var(--tertiary);
 }
 
-.container-toggle-buttons {
+.container-unit-buttons {
   display: flex;
   justify-content: center;
   margin: 32px;
 }
 
-.toggle-button {
-  color: dimgray;
+/* ==== UNITS ==== */
+
+.unit-button {
+  color: var(--secondary);
   font-weight: 100;
   padding: 4px 8px;
-  border: 1px solid dimgray;
+  border: 1px solid var(--secondary);
   cursor: pointer;
 }
 
 .unit-enabled {
-  background-color: beige;
+  background-color: var(--primary);
   cursor: default;
 }
 
@@ -66,5 +78,5 @@ body {
 }
 
 .left-border {
-  border-left: 1px solid dimgray;
+  border-left: 1px solid var(--secondary);
 }

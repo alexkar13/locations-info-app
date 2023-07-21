@@ -17,6 +17,7 @@
     "quotes": "off",
     "semi": "off",
     "space-before-function-paren": "off",
-    "comma-dangle": "off"
+    "no-trailing-spaces": "off",
+    "comma-dangle":"off"
   }
 }

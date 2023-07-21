@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="card-title">Playa del Carmen</h1>
+        </div>
+        <div class="container-temperature">
+          <span id="temp"></span>
+        </div>
+        <div class="container-unit-buttons">
+          <span
+            id="celsius-button"
+            class="unit-button right-border-none unit-enabled"
+          >
+            °C </span
+          ><span id="farhenheit-btn" class="unit-button left-border">°F</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="index.js"></script>
+</html>
